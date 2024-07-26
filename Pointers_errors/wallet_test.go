@@ -12,7 +12,7 @@ func TestWallet(t *testing.T) {
 		}
 	}
 
-	assertError := func(t testing.TB, got, want error) {
+	assertError := func(t testing.TB, got error, want error) {
 		t.Helper()
 		if got == nil {
 			t.Fatal("didn't get an error but one")
